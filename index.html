@@ -1,0 +1,2636 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OCEAN GUNA YALA TOURS San Blas</title>
+<!-- Fuentes Google / Tipografía Base Arial -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+<!-- Script Oficial de Google Translate para traducción completa de la página -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'es',
+    includedLanguages: 'es,en,pt,fr',
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<style>
+:root {
+--navy-dark: #081320;
+--navy-blue: #111E30;
+--emerald-accent: #00B493;
+--emerald-dark: #00876e;
+--gold-accent: #D4AF37;
+--whatsapp-green: #25D366;
+--whatsapp-dark: #128C7E;
+--sand-light: #F4F0EA;
+--white-pure: #FFFFFF;
+--text-dark: #1E293B;
+--text-muted: #647488;
+--shadow-subtle: 0 10px 30px rgba(0, 0, 0, 0.05);
+--shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url('img/fondo.jpg') no-repeat center center fixed;
+background-size: cover;
+color: var(--text-dark);
+line-height: 1.6;
+-webkit-font-smoothing: antialiased;
+top: 0 !important;
+}
+
+/* Ocultar barra superior y elementos automáticos de Google Translate */
+.goog-te-banner-frame, .skiptranslate, .goog-te-gadget span {
+display: none !important;
+}
+body {
+top: 0px !important;
+}
+.goog-te-gadget {
+color: transparent !important;
+font-size: 0px;
+}
+
+h1, h2, h3, .brand-font {
+font-family: 'Playfair Display', Arial, serif;
+}
+
+/* NAVEGACIÓN */
+header {
+position: sticky;
+top: 0;
+background-color: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(12px);
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 4%;
+box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+z-index: 1000;
+}
+.logo {
+font-size: 1.2rem;
+font-weight: 700;
+color: var(--navy-dark);
+letter-spacing: 0.5px;
+text-transform: uppercase;
+cursor: pointer;
+}
+.logo span {
+color: var(--emerald-accent);
+font-family: Arial, sans-serif;
+font-weight: 400;
+}
+nav ul {
+display: flex;
+list-style: none;
+gap: 18px;
+align-items: center;
+flex-wrap: wrap;
+}
+nav a {
+text-decoration: none;
+color: var(--navy-dark);
+font-weight: 500;
+font-size: 0.85rem;
+letter-spacing: 0.3px;
+transition: color 0.3s;
+cursor: pointer;
+}
+nav a:hover, nav a.active-link {
+color: var(--emerald-accent);
+}
+
+/* CONTENEDOR DERECHO EN HEADER */
+.header-right-container {
+display: flex;
+align-items: center;
+gap: 25px;
+}
+
+/* ICONOS REDES EN HEADER */
+.header-social-icons {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.header-icon-btn {
+width: 38px;
+height: 38px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+color: var(--white-pure);
+transition: transform 0.3s ease;
+}
+.header-icon-btn:hover {
+transform: scale(1.1);
+}
+.header-icon-btn.ws {
+background-color: #25D366;
+}
+.header-icon-btn.ig {
+background-color: #00B4D8;
+}
+.header-icon-btn.fb {
+background-color: #00B4D8;
+}
+
+/* SELECTOR DE IDIOMA */
+.language-selector-wrapper {
+position: relative;
+display: inline-block;
+}
+.language-btn {
+background-color: #111111;
+color: #ffffff;
+border: none;
+padding: 8px 16px;
+border-radius: 6px;
+font-size: 0.85rem;
+font-weight: 600;
+display: flex;
+align-items: center;
+gap: 8px;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+.language-btn:hover {
+background-color: #333333;
+}
+.language-dropdown {
+position: absolute;
+top: 105%;
+right: 0;
+background-color: #111111;
+border-radius: 6px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+display: none;
+flex-direction: column;
+min-width: 140px;
+overflow: hidden;
+z-index: 2000;
+}
+.language-dropdown.show {
+display: flex;
+}
+.language-dropdown button {
+background: none;
+border: none;
+color: #ffffff;
+padding: 10px 16px;
+text-align: left;
+font-size: 0.85rem;
+cursor: pointer;
+font-family: Arial, sans-serif;
+transition: background 0.2s ease;
+}
+.language-dropdown button:hover {
+background-color: var(--emerald-accent);
+}
+
+/* SISTEMA DE PÁGINAS */
+.page-view {
+display: none;
+animation: fadeIn 0.4s ease forwards;
+}
+.page-view.active-page {
+display: block;
+}
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+/* HERO PRINCIPAL */
+.hero {
+position: relative;
+min-height: 80vh;
+background: url('img/fondo-principal.jpg') no-repeat center center/cover;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: var(--navy-dark);
+padding: 0 20px;
+}
+.hero-content {
+max-width: 900px;
+}
+.badge-luxury {
+display: inline-block;
+background: rgba(8, 19, 32, 0.75);
+backdrop-filter: blur(10px);
+color: var(--white-pure);
+border: 1px solid rgba(255, 255, 255, 0.3);
+padding: 8px 22px;
+border-radius: 50px;
+font-size: 0.8rem;
+letter-spacing: 2px;
+text-transform: uppercase;
+margin-bottom: 25px;
+font-weight: 600;
+}
+.hero h1 {
+font-size: 3.2rem;
+line-height: 1.15;
+margin-bottom: 20px;
+font-weight: 700;
+color: var(--navy-dark);
+}
+.hero p {
+font-size: 1.15rem;
+max-width: 680px;
+margin: 0 auto 35px auto;
+color: var(--navy-dark);
+font-weight: 600;
+}
+.hero-buttons {
+display: flex;
+gap: 15px;
+justify-content: center;
+flex-wrap: wrap;
+}
+.btn-hero {
+background-color: var(--emerald-accent);
+color: var(--white-pure);
+padding: 16px 36px;
+border-radius: 40px;
+text-decoration: none;
+font-weight: 600;
+font-size: 0.95rem;
+letter-spacing: 1px;
+display: inline-flex;
+align-items: center;
+gap: 10px;
+transition: all 0.3s ease;
+box-shadow: 0 10px 25px rgba(0, 180, 147, 0.3);
+cursor: pointer;
+}
+.btn-hero:hover {
+transform: translateY(-3px);
+box-shadow: 0 15px 35px rgba(0, 180, 147, 0.4);
+}
+.btn-hero-whatsapp {
+background-color: var(--whatsapp-green);
+box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+}
+.btn-hero-whatsapp:hover {
+background-color: var(--whatsapp-dark);
+}
+
+/* ESTRUCTURA GENERAL */
+.section {
+padding: 80px 7%;
+max-width: 1400px;
+margin: 0 auto;
+}
+.section-header {
+text-align: center;
+margin-bottom: 50px;
+}
+.section-subtitle {
+color: var(--emerald-accent);
+font-size: 0.85rem;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-weight: 700;
+margin-bottom: 10px;
+display: block;
+}
+.section-header h2 {
+font-size: 2.8rem;
+color: var(--navy-dark);
+font-weight: 700;
+}
+.section-description {
+max-width: 780px;
+margin: 18px auto 0 auto;
+font-size: 1.15rem;
+color: var(--navy-dark);
+font-weight: 600;
+line-height: 1.6;
+text-align: center;
+}
+
+/* TARJETAS DE TOURS */
+.grid-cards {
+display: grid;
+grid-template-columns: repeat(2, minmax(320px, 1fr));
+gap: 35px;
+max-width: 1000px;
+margin: 0 auto;
+}
+.card {
+background: var(--white-pure);
+border-radius: 20px;
+overflow: hidden;
+box-shadow: var(--shadow-subtle);
+transition: all 0.3s ease;
+display: flex;
+flex-direction: column;
+border: 1px solid rgba(0, 0, 0, 0.04);
+}
+.card:hover {
+transform: translateY(-8px);
+box-shadow: var(--shadow-hover);
+}
+.card-img-wrapper {
+position: relative;
+overflow: hidden;
+height: 230px;
+width: 100%;
+}
+.card-img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.5s ease;
+}
+.card:hover .card-img {
+transform: scale(1.05);
+}
+.card-tag {
+position: absolute;
+top: 15px;
+left: 15px;
+background: rgba(11, 19, 32, 0.85);
+backdrop-filter: blur(8px);
+color: var(--white-pure);
+padding: 6px 14px;
+border-radius: 30px;
+font-size: 0.7rem;
+letter-spacing: 1px;
+text-transform: uppercase;
+font-weight: 700;
+}
+.card-body {
+padding: 28px;
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+}
+.card-title {
+font-family: 'Playfair Display', Arial, serif;
+font-size: 1.5rem;
+color: var(--navy-dark);
+margin-bottom: 12px;
+font-weight: 700;
+line-height: 1.3;
+}
+.card-desc {
+font-size: 0.92rem;
+color: var(--text-muted);
+margin-bottom: 25px;
+line-height: 1.6;
+flex-grow: 1;
+}
+.card-footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-top: 1px solid #F1F5F9;
+padding-top: 18px;
+margin-top: auto;
+gap: 12px;
+}
+.price-container {
+display: flex;
+flex-direction: column;
+}
+.price-label {
+font-size: 0.7rem;
+color: var(--text-muted);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+font-weight: 600;
+}
+.price {
+font-size: 1.35rem;
+font-weight: 800;
+color: var(--navy-dark);
+}
+.card-actions {
+display: flex;
+gap: 8px;
+}
+.btn-card-details {
+background-color: var(--navy-blue);
+color: var(--white-pure);
+padding: 10px 16px;
+border-radius: 30px;
+border: none;
+font-size: 0.82rem;
+font-weight: 600;
+cursor: pointer;
+text-align: center;
+transition: background-color 0.3s ease;
+text-decoration: none;
+white-space: nowrap;
+}
+.btn-card-details:hover {
+background-color: var(--emerald-accent);
+}
+.btn-card-ws {
+background-color: var(--whatsapp-green);
+color: var(--white-pure);
+padding: 10px 18px;
+border-radius: 30px;
+text-decoration: none;
+font-size: 0.82rem;
+font-weight: 600;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+transition: background-color 0.3s;
+white-space: nowrap;
+}
+.btn-card-ws:hover {
+background-color: var(--whatsapp-dark);
+}
+
+/* GALERÍA PANORÁMICA */
+.photo-slider-wrapper {
+position: relative;
+max-width: 1300px;
+margin: 0 auto 60px auto;
+overflow: hidden;
+padding: 20px 10px;
+}
+.photo-slider-track {
+display: flex;
+gap: 25px;
+transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.photo-slide-item {
+flex: 0 0 calc((100% - 25px) / 2);
+height: 380px;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+transition: transform 0.4s ease, box-shadow 0.4s ease;
+position: relative;
+background: #f0f0f0;
+}
+.photo-slide-item:hover {
+transform: translateY(-8px);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
+}
+.photo-slide-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+transition: transform 0.6s ease;
+}
+.photo-slide-item:hover img {
+transform: scale(1.08);
+}
+
+/* CARRUSEL DE VIDEOS */
+.video-slider-container {
+position: relative;
+max-width: 1000px;
+margin: 0 auto;
+overflow: hidden;
+border-radius: 20px;
+box-shadow: var(--shadow-hover);
+background: #000;
+}
+.video-slider-track {
+display: flex;
+transition: transform 0.5s ease-in-out;
+width: 100%;
+}
+.video-slide-item {
+min-width: 100%;
+box-sizing: border-box;
+position: relative;
+background: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.video-slide-item video {
+width: 100%;
+height: 520px;
+object-fit: contain;
+display: block;
+background: #000;
+}
+
+/* SECCIÓN DE RESEÑAS */
+.reviews-full-wrapper {
+position: relative;
+background: linear-gradient(rgba(11, 19, 32, 0.65), rgba(11, 19, 32, 0.65)), url('img/fondo-principal.jpg') no-repeat center center/cover;
+padding: 90px 20px;
+border-radius: 28px;
+margin: 40px auto;
+max-width: 1200px;
+color: var(--white-pure);
+box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+.reviews-section-title {
+text-align: center;
+font-size: 2.5rem;
+color: var(--white-pure);
+margin-bottom: 40px;
+}
+.reviews-slider-container {
+position: relative;
+max-width: 780px;
+margin: 0 auto 50px auto;
+overflow: hidden;
+}
+.reviews-slider-track {
+display: flex;
+transition: transform 0.5s ease-in-out;
+width: 100%;
+}
+.review-card-item {
+min-width: 100%;
+box-sizing: border-box;
+padding: 0 10px;
+}
+.review-box {
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(10px);
+border-radius: 20px;
+padding: 35px 40px;
+color: var(--text-dark);
+box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.review-author-flex {
+display: flex;
+align-items: center;
+gap: 15px;
+margin-bottom: 12px;
+}
+.review-avatar {
+width: 52px;
+height: 52px;
+border-radius: 50%;
+background-color: var(--emerald-accent);
+color: var(--white-pure);
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 700;
+font-size: 1.2rem;
+box-shadow: 0 4px 10px rgba(0, 180, 147, 0.3);
+flex-shrink: 0;
+}
+.review-author-info h4 {
+font-size: 1.1rem;
+color: var(--navy-dark);
+margin: 0;
+font-weight: 700;
+}
+.review-location {
+font-size: 0.82rem;
+color: var(--text-muted);
+font-weight: 500;
+}
+.review-stars-date {
+display: flex;
+align-items: center;
+gap: 12px;
+margin-bottom: 15px;
+}
+.review-stars {
+color: #F4B400;
+font-size: 1.1rem;
+letter-spacing: 2px;
+}
+.review-date {
+font-size: 0.8rem;
+color: var(--text-muted);
+}
+.review-text {
+font-size: 0.95rem;
+line-height: 1.7;
+color: #334155;
+margin-bottom: 15px;
+min-height: 70px;
+}
+.translate-review-btn {
+background: none;
+border: none;
+color: var(--emerald-dark);
+font-size: 0.82rem;
+font-weight: 700;
+cursor: pointer;
+display: inline-flex;
+align-items: center;
+gap: 5px;
+padding: 0;
+text-decoration: underline;
+transition: color 0.2s;
+}
+.translate-review-btn:hover {
+color: var(--navy-dark);
+}
+
+/* FORMULARIO RESEÑAS */
+.review-form-container {
+background: var(--white-pure);
+max-width: 650px;
+margin: 0 auto;
+border-radius: 20px;
+padding: 35px 40px;
+color: var(--text-dark);
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+.review-form-container h3 {
+color: var(--emerald-accent);
+font-size: 1.4rem;
+text-align: center;
+margin-bottom: 25px;
+}
+.form-group-row {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 15px;
+margin-bottom: 15px;
+}
+.form-input, .form-select, .form-textarea {
+width: 100%;
+padding: 12px 16px;
+border-radius: 10px;
+border: 1px solid #CBD5E1;
+font-family: Arial, sans-serif;
+font-size: 0.9rem;
+outline: none;
+transition: border-color 0.3s;
+}
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+border-color: var(--emerald-accent);
+}
+.form-textarea {
+resize: vertical;
+min-height: 100px;
+margin-bottom: 20px;
+}
+.btn-submit-review {
+width: 100%;
+background-color: var(--emerald-accent);
+color: var(--white-pure);
+border: none;
+padding: 14px;
+border-radius: 12px;
+font-weight: 700;
+font-size: 1rem;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+.btn-submit-review:hover {
+background-color: var(--emerald-dark);
+}
+
+/* CONTACTO */
+.contact-section-container {
+background-color: #FAF4E8;
+border-radius: 24px;
+padding: 50px 60px;
+box-shadow: var(--shadow-subtle);
+display: grid;
+grid-template-columns: 1fr 1.2fr;
+gap: 50px;
+position: relative;
+overflow: hidden;
+align-items: start;
+}
+.contact-col-left h2 {
+font-size: 2.2rem;
+font-family: Arial, sans-serif;
+font-weight: 800;
+color: #000000;
+margin-bottom: 35px;
+letter-spacing: -0.5px;
+text-transform: uppercase;
+}
+.contact-info-block {
+margin-bottom: 30px;
+}
+.contact-info-block h3 {
+font-size: 1.1rem;
+font-weight: 700;
+color: #1E293B;
+margin-bottom: 5px;
+font-family: Arial, sans-serif;
+}
+.contact-info-block p, .contact-info-block a {
+font-size: 1.1rem;
+color: #1E293B;
+text-decoration: none;
+margin-bottom: 4px;
+display: block;
+}
+.contact-info-block a.email-link {
+color: #0B57D0;
+word-break: break-all;
+}
+.contact-social-icons {
+display: flex;
+gap: 15px;
+margin-top: 25px;
+align-items: center;
+}
+.social-icon-btn {
+width: 44px;
+height: 44px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+color: var(--white-pure);
+transition: transform 0.3s ease;
+}
+.social-icon-btn:hover {
+transform: scale(1.1);
+}
+.social-icon-btn.ws-btn {
+background-color: #25D366;
+}
+.social-icon-btn.ig-btn {
+background-color: #00B4D8;
+}
+.social-icon-btn.fb-btn {
+background-color: #00B4D8;
+}
+
+.contact-col-right h2 {
+font-size: 2.2rem;
+font-family: Arial, sans-serif;
+font-weight: 800;
+color: #000000;
+margin-bottom: 35px;
+letter-spacing: -0.5px;
+text-transform: uppercase;
+}
+.contact-form-group {
+margin-bottom: 20px;
+}
+.contact-form-group label {
+display: block;
+font-size: 0.95rem;
+color: #555555;
+margin-bottom: 6px;
+font-weight: 400;
+}
+.contact-form-group input, .contact-form-group textarea {
+width: 100%;
+padding: 12px 16px;
+background: #FFFFFF;
+border: 1px solid #CCCCCC;
+border-radius: 6px;
+font-size: 0.95rem;
+outline: none;
+font-family: Arial, sans-serif;
+transition: border-color 0.2s ease;
+}
+.contact-form-group input:focus, .contact-form-group textarea:focus {
+border-color: #00876e;
+}
+.contact-form-group textarea {
+resize: vertical;
+min-height: 140px;
+}
+.btn-contact-send {
+background-color: #008B9B;
+color: #FFFFFF;
+border: none;
+padding: 12px 36px;
+border-radius: 6px;
+font-weight: 700;
+font-size: 0.95rem;
+cursor: pointer;
+transition: background-color 0.3s ease;
+margin-top: 10px;
+}
+.btn-contact-send:hover {
+background-color: #006D7A;
+}
+
+/* BOTONES CARRUSELES */
+.slider-btn {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(11, 19, 32, 0.75);
+color: var(--white-pure);
+border: none;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+cursor: pointer;
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 10;
+backdrop-filter: blur(5px);
+transition: all 0.3s ease;
+box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.slider-btn:hover {
+background: var(--emerald-accent);
+transform: translateY(-50%) scale(1.08);
+}
+.slider-btn.prev { left: 15px; }
+.slider-btn.next { right: 15px; }
+.slider-dots {
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+gap: 8px;
+z-index: 10;
+flex-wrap: wrap;
+justify-content: center;
+max-width: 90%;
+}
+.dot {
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.5);
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.dot.active {
+background: var(--emerald-accent);
+width: 24px;
+border-radius: 10px;
+}
+
+/* MODAL DE DETALLES */
+.modal-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(11, 19, 32, 0.75);
+backdrop-filter: blur(8px);
+z-index: 3000;
+display: none;
+justify-content: center;
+align-items: center;
+padding: 20px;
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+.modal-overlay.active {
+display: flex;
+opacity: 1;
+}
+.modal-container {
+background: var(--white-pure);
+border-radius: 24px;
+width: 100%;
+max-width: 800px;
+max-height: 90vh;
+overflow-y: auto;
+position: relative;
+box-shadow: 0 25px 50px 12px rgba(0, 0, 0, 0.25);
+animation: modalUp 0.4s ease;
+}
+@keyframes modalUp {
+from { transform: translateY(30px); opacity: 0; }
+to { transform: translateY(0); opacity: 1; }
+}
+.modal-close-btn {
+position: absolute;
+top: 20px;
+right: 20px;
+background: rgba(255, 255, 255, 0.9);
+border: none;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+font-size: 1.5rem;
+cursor: pointer;
+z-index: 10;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+transition: all 0.2s ease;
+}
+.modal-close-btn:hover {
+background: var(--navy-dark);
+color: var(--white-pure);
+}
+.modal-banner {
+height: 280px;
+width: 100%;
+object-fit: cover;
+}
+.modal-content-body {
+padding: 40px;
+}
+.modal-header-flex {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+margin-bottom: 25px;
+border-bottom: 1px solid #E2E8F0;
+padding-bottom: 20px;
+flex-wrap: wrap;
+}
+.modal-title {
+font-size: 2rem;
+color: var(--navy-dark);
+}
+.modal-price-badge {
+background: var(--navy-dark);
+color: var(--white-pure);
+padding: 8px 18px;
+border-radius: 30px;
+font-weight: 700;
+font-size: 1rem;
+white-space: nowrap;
+}
+
+.modal-section-title {
+font-size: 1.1rem;
+color: var(--navy-dark);
+margin: 25px 0 12px 0;
+display: flex;
+align-items: center;
+gap: 8px;
+font-weight: 700;
+}
+
+.modal-text {
+color: var(--text-muted);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+
+.modal-info-box {
+background-color: #E0F2FE;
+border: 1px solid #BAE6FD;
+border-radius: 16px;
+padding: 22px 25px;
+margin-top: 15px;
+box-shadow: 0 4px 15px rgba(0, 180, 216, 0.05);
+}
+.modal-info-box .modal-section-title {
+margin-top: 0;
+margin-bottom: 12px;
+}
+.modal-info-box h3 {
+font-size: 1.25rem;
+font-family: 'Playfair Display', Arial, serif;
+color: var(--navy-dark);
+margin-bottom: 15px;
+font-weight: 700;
+}
+.modal-info-box p {
+font-size: 0.95rem;
+color: var(--text-dark);
+margin-bottom: 10px;
+line-height: 1.6;
+}
+
+.modal-list {
+list-style: none;
+margin-left: 0;
+margin-bottom: 0;
+}
+.modal-list li {
+position: relative;
+padding-left: 22px;
+margin-bottom: 10px;
+color: var(--text-dark);
+font-size: 0.92rem;
+line-height: 1.5;
+}
+.modal-list li:last-child {
+margin-bottom: 0;
+}
+.modal-list li::before {
+content: "";
+position: absolute;
+left: 0;
+color: var(--emerald-accent);
+font-weight: bold;
+}
+.itinerary-list li::before {
+content: "•";
+color: var(--navy-dark);
+font-size: 1.2rem;
+}
+
+.modal-footer-btn {
+margin-top: 30px;
+text-align: center;
+}
+.btn-modal-reserve {
+background-color: var(--whatsapp-green);
+color: var(--white-pure);
+padding: 16px 40px;
+border-radius: 40px;
+text-decoration: none;
+font-weight: 700;
+font-size: 1rem;
+display: inline-flex;
+align-items: center;
+gap: 10px;
+transition: background 0.3s ease;
+}
+.btn-modal-reserve:hover {
+background-color: var(--whatsapp-dark);
+}
+
+.experience-banner {
+background: rgba(17, 30, 48, 0.78);
+backdrop-filter: blur(10px);
+color: var(--white-pure);
+border-radius: 28px;
+padding: 70px 50px;
+display: grid;
+grid-template-columns: 1.2fr 1fr;
+gap: 40px;
+align-items: center;
+margin: 60px auto 0 auto;
+max-width: 1200px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+.experience-content h2 {
+font-size: 2.5rem;
+margin-bottom: 20px;
+color: var(--white-pure);
+}
+.experience-content p {
+color: #E2E8F0;
+font-size: 1rem;
+margin-bottom: 30px;
+font-weight: 300;
+}
+.experience-img {
+width: 100%;
+height: 350px;
+object-fit: cover;
+border-radius: 20px;
+}
+
+.content-box {
+background: var(--white-pure);
+padding: 50px;
+border-radius: 24px;
+box-shadow: var(--shadow-subtle);
+margin-bottom: 40px;
+}
+.content-box h3 {
+font-size: 1.8rem;
+color: var(--navy-dark);
+margin-bottom: 15px;
+}
+.content-box p {
+color: var(--text-muted);
+margin-bottom: 20px;
+line-height: 1.8;
+}
+
+.gallery-grid-3 {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+margin-top: 30px;
+}
+.gallery-grid-3 img {
+width: 100%;
+height: 250px;
+object-fit: cover;
+border-radius: 16px;
+box-shadow: var(--shadow-subtle);
+transition: transform 0.3s ease;
+}
+.gallery-grid-3 img:hover {
+transform: scale(1.03);
+}
+
+.faq-block-group {
+margin-bottom: 25px;
+}
+.faq-block-group h4 {
+font-size: 1.15rem;
+color: var(--navy-dark);
+margin-bottom: 12px;
+border-bottom: 1px solid #BAE6FD;
+padding-bottom: 5px;
+font-family: 'Playfair Display', Arial, serif;
+}
+
+/* CHAT WHATSAPP */
+.whatsapp-chat-box {
+position: fixed;
+bottom: 95px;
+right: 30px;
+width: 320px;
+background: #ffffff;
+border-radius: 16px;
+box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+overflow: hidden;
+z-index: 2000;
+display: none;
+flex-direction: column;
+border: 1px solid rgba(0,0,0,0.08);
+animation: popup 0.3s ease forwards;
+}
+.whatsapp-chat-box.active {
+display: flex;
+}
+@keyframes popup {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+.chat-header {
+background-color: #111E30;
+color: #ffffff;
+padding: 16px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.chat-agent-info {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.chat-avatar-wrapper {
+position: relative;
+}
+.chat-avatar {
+width: 42px;
+height: 42px;
+border-radius: 50%;
+object-fit: cover;
+}
+.status-dot {
+position: absolute;
+bottom: 2px;
+right: 0;
+width: 10px;
+height: 10px;
+background-color: #25D366;
+border-radius: 50%;
+border: 2px solid #111E30;
+}
+.chat-agent-name {
+font-weight: 700;
+font-size: 0.95rem;
+}
+.chat-status {
+font-size: 0.75rem;
+color: #94A3B8;
+}
+.chat-close-btn {
+background: none;
+border: none;
+color: #94A3B8;
+font-size: 1.2rem;
+cursor: pointer;
+}
+.chat-close-btn:hover {
+color: #ffffff;
+}
+.chat-body {
+background-color: #E5DDD5;
+background-image: radial-gradient(#000000 0.5px, transparent 0.5px);
+background-size: 12px 12px;
+opacity: 0.95;
+padding: 20px;
+}
+.chat-message-bubble {
+background: #ffffff;
+padding: 12px 16px;
+border-radius: 0px 12px 12px 12px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+font-size: 0.88rem;
+color: #1E293B;
+}
+.chat-message-sender {
+font-size: 0.75rem;
+font-weight: 700;
+color: #647488;
+margin-bottom: 4px;
+}
+.chat-time {
+font-size: 0.65rem;
+color: #94A3B8;
+text-align: right;
+margin-top: 4px;
+}
+.chat-footer {
+background: #ffffff;
+padding: 15px;
+text-align: center;
+}
+.chat-action-btn {
+background-color: var(--whatsapp-green);
+color: #ffffff;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+padding: 12px 20px;
+border-radius: 25px;
+font-weight: 700;
+font-size: 0.9rem;
+transition: background 0.3s ease;
+}
+.chat-action-btn:hover {
+background-color: var(--whatsapp-dark);
+}
+.whatsapp-float-trigger {
+position: fixed;
+bottom: 25px;
+right: 25px;
+background-color: #111E30;
+color: #ffffff;
+width: 58px;
+height: 58px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+z-index: 2001;
+cursor: pointer;
+border: none;
+transition: all 0.3s ease;
+}
+.whatsapp-float-trigger:hover {
+transform: scale(1.08);
+}
+.notification-badge {
+position: absolute;
+top: 2px;
+right: 2px;
+width: 12px;
+height: 12px;
+background-color: #D90429;
+border-radius: 50%;
+border: 2px solid #ffffff;
+}
+
+/* WIDGET FLOTANTE GOOGLE REVIEWS */
+.google-reviews-floating-badge {
+position: fixed;
+bottom: 25px;
+left: 25px;
+background: #ffffff;
+border-radius: 12px;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+display: flex;
+align-items: center;
+padding: 10px 16px;
+z-index: 2001;
+cursor: pointer;
+border: 1px solid rgba(0, 0, 0, 0.08);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+font-family: Arial, sans-serif;
+text-decoration: none;
+}
+.google-reviews-floating-badge:hover {
+transform: translateY(-3px);
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+.google-logo-wrapper {
+padding-right: 14px;
+border-right: 1px solid #E2E8F0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.google-reviews-info {
+padding-left: 14px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.google-rating-row {
+display: flex;
+align-items: center;
+gap: 6px;
+}
+.google-score {
+font-size: 1.15rem;
+font-weight: 800;
+color: #EA4335;
+line-height: 1;
+}
+.google-stars {
+color: #FBBC04;
+font-size: 1rem;
+letter-spacing: 1px;
+line-height: 1;
+}
+.google-reviews-count {
+font-size: 0.72rem;
+font-weight: 700;
+color: #5F6368;
+margin-top: 3px;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+}
+.google-arrow-icon {
+margin-left: 12px;
+color: #9AA0A6;
+display: flex;
+align-items: center;
+}
+
+/* FOOTER */
+footer {
+background-color: rgba(8, 19, 32, 0.82);
+backdrop-filter: blur(12px);
+color: #CBD5E1;
+padding: 70px 7% 30px 7%;
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+margin-top: 60px;
+}
+.footer-content {
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+gap: 50px;
+margin-bottom: 50px;
+}
+.footer-brand h3 {
+color: var(--white-pure);
+font-size: 1.5rem;
+margin-bottom: 15px;
+}
+.footer-bottom {
+text-align: center;
+padding-top: 25px;
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+font-size: 0.85rem;
+}
+.whatsapp-link-footer {
+color: var(--whatsapp-green);
+text-decoration: none;
+font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+header { flex-direction: column; gap: 15px; }
+.hero h1 { font-size: 2.3rem; }
+.experience-banner { grid-template-columns: 1fr; padding: 40px 25px; }
+.footer-content { grid-template-columns: 1fr; }
+nav ul { gap: 12px; font-size: 0.8rem; }
+.grid-cards, .gallery-grid-3, .contact-section-container { grid-template-columns: 1fr; }
+.whatsapp-chat-box { right: 15px; left: 15px; width: auto; bottom: 90px; }
+.modal-content-body { padding: 25px; }
+.video-slide-item video { height: 350px; }
+.photo-slide-item { flex: 0 0 100%; height: 300px; }
+.form-group-row { grid-template-columns: 1fr; }
+.review-box { padding: 25px 20px; }
+.review-form-container { padding: 25px 20px; }
+.contact-section-container { padding: 30px 20px; }
+.google-reviews-floating-badge { bottom: 15px; left: 15px; padding: 8px 12px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ELEMENTO REQUERIDO PARA LA TRADUCCIÓN AUTOMÁTICA -->
+<div id="google_translate_element" style="display:none;"></div>
+
+<!-- NAVEGACIÓN PRINCIPAL -->
+<header>
+<div class="logo" onclick="switchPage('home')">OCEAN <span>GUNA YALA</span></div>
+<nav>
+<ul>
+<li><a onclick="switchPage('home')" id="link-home" class="active-link">home</a></li>
+<li><a onclick="switchPage('quienes')" id="link-quienes">quienes somos</a></li>
+<li><a onclick="switchPage('tours')" id="link-tours">tours</a></li>
+<li><a onclick="switchPage('comollegar')" id="link-comollegar">como llegar</a></li>
+<li><a onclick="switchPage('galeria')" id="link-galeria">galeria</a></li>
+<li><a onclick="switchPage('opiniones')" id="link-opiniones">Opiniones</a></li>
+<li><a onclick="switchPage('cultura')" id="link-cultura">Cultura Guna</a></li>
+<li><a onclick="switchPage('contacto')" id="link-contacto">contacto</a></li>
+</ul>
+</nav>
+
+<div class="header-right-container">
+<!-- ICONOS DE REDES SOCIALES -->
+<div class="header-social-icons">
+<a href="https://wa.me/50765551803" class="header-icon-btn ws" target="_blank" title="WhatsApp">
+<svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+<a href="https://www.instagram.com/raymartinez.04" class="header-icon-btn ig" target="_blank" title="Instagram">
+<svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.262-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+</a>
+<a href="https://www.facebook.com/share/19uy79CnRM/" class="header-icon-btn fb" target="_blank" title="Facebook">
+<svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.592 9 4.415V8z"/></svg>
+</a>
+</div>
+
+<!-- SELECTOR DE IDIOMA EN LA ESQUINA -->
+<div class="language-selector-wrapper">
+<button class="language-btn" onclick="toggleLanguageMenu()">
+<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+Language ∨
+</button>
+<div class="language-dropdown" id="languageDropdown">
+<button onclick="changeLanguage('es')">Español</button>
+<button onclick="changeLanguage('en')">English</button>
+<button onclick="changeLanguage('pt')">Português</button>
+<button onclick="changeLanguage('fr')">Français</button>
+</div>
+</div>
+</div>
+</header>
+
+
+<!-- ========================================== -->
+<!-- 1. PÁGINA: HOME (INICIO) -->
+<!-- ========================================== -->
+<div id="page-home" class="page-view active-page">
+<section class="hero">
+<div class="hero-content">
+<span class="badge-luxury">Experiencia Auténtica & Exclusiva</span>
+<h1>Descubre el Paraíso Indómito con Ocean Guna Yala Tours</h1>
+<p>Navega entre islas vírgenes y aguas turquesas guiado por la hospitalidad nativa de San Blas.</p>
+<div class="hero-buttons">
+<button class="btn-hero" onclick="switchPage('tours')">Explorar Tours</button>
+<a href="https://wa.me/50765551803?text=Hola,%20deseo%20informacion%20sobre%20los%20tours" class="btn-hero btn-hero-whatsapp" target="_blank">Chatear por WhatsApp</a>
+</div>
+</div>
+</section>
+
+<!-- SECCIÓN DE TOURS -->
+<section class="section">
+<div class="section-header">
+<span class="section-subtitle">Excursiones Principales</span>
+<h2>Day Tours Exclusivos</h2>
+<p class="section-description">
+Descubre el paraíso de Guna Yala, conocido como San Blas, con Ocean Guna Yala Tours. Vive una experiencia inolvidable recorriendo islas de aguas cristalinas, playas de arena blanca y paisajes naturales únicos. Organizamos tours desde Ciudad de Panamá para que disfrutes de Guna Yala y te lleves recuerdos increíbles. ¡Tu aventura en el Caribe comienza aquí!
+</p>
+</div>
+<div class="grid-cards">
+<!-- TARJETA 1 -->
+<div class="card">
+<div class="card-img-wrapper">
+<span class="card-tag">El Más Elegido</span>
+<img src="img/fot1.jpg" alt="Classic Shared Day Tour" class="card-img">
+</div>
+<div class="card-body">
+<h3 class="card-title">Classic Shared Day Tour</h3>
+<p class="card-desc">Recorrido por Isla Perro Chico, Isla Pelícano y la emblemática Piscina Natural con almuerzo incluido.</p>
+<div class="card-footer">
+<div class="price-container">
+<span class="price-label">Desde</span>
+<span class="price">$110 USD</span>
+</div>
+<div class="card-actions">
+<button class="btn-card-details" onclick="openModal('classic')">Ver detalles</button>
+<a href="https://wa.me/50765551803?text=Hola,%20deseo%20reservar%20el%20Classic%20Shared%20Day%20Tour" class="btn-card-ws" target="_blank">Reservar</a>
+</div>
+</div>
+</div>
+</div>
+<!-- TARJETA 2 -->
+<div class="card">
+<div class="card-img-wrapper">
+<span class="card-tag">Privado & Exclusivo</span>
+<img src="img/fot2.jpg" alt="VIP Private All-Inclusive Charter" class="card-img">
+</div>
+<div class="card-body">
+<h3 class="card-title">VIP Private All-Inclusive Charter</h3>
+<p class="card-desc">Transporte 4x4 de alta gama y navegación privada personalizada exclusivamente para tu grupo o pareja.</p>
+<div class="card-footer">
+<div class="price-container">
+<span class="price-label">Desde</span>
+<span class="price">$150 USD</span>
+</div>
+<div class="card-actions">
+<button class="btn-card-details" onclick="openModal('vip')">Ver detalles</button>
+<a href="https://wa.me/50765551803?text=Hola,%20deseo%20reservar%20el%20VIP%20Private%20All-Inclusive%20Charter" class="btn-card-ws" target="_blank">Reservar</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOTOGRAFÍAS, VIDEOS Y GUARDIANES -->
+<section class="section" style="padding-top: 0;">
+<div class="section-header">
+<span class="section-subtitle">Galería Multimedia</span>
+<h2>Fotografías Panorámicas (40 Imágenes Exclusivas)</h2>
+</div>
+<div class="photo-slider-wrapper">
+<button class="slider-btn prev" onclick="movePhotoSlide(-1)">&#10094;</button>
+<button class="slider-btn next" onclick="movePhotoSlide(1)">&#10095;</button>
+<div class="photo-slider-track" id="photoTrack"></div>
+</div>
+
+<div class="section-header" style="margin-top: 60px;">
+<h2>Videos del Recorrido</h2>
+</div>
+<div class="video-slider-container">
+<button class="slider-btn prev" onclick="moveVideoSlide(-1)">&#10094;</button>
+<button class="slider-btn next" onclick="moveVideoSlide(1)">&#10095;</button>
+<div class="video-slider-track" id="videoTrack">
+<div class="video-slide-item"><video controls preload="metadata"><source src="video/video1.mp4" type="video/mp4"></video></div>
+<div class="video-slide-item"><video controls preload="metadata"><source src="video/video2.mp4" type="video/mp4"></video></div>
+<div class="video-slide-item"><video controls preload="metadata"><source src="video/video3.mp4" type="video/mp4"></video></div>
+<div class="video-slide-item"><video controls preload="metadata"><source src="video/video4.mp4" type="video/mp4"></video></div>
+<div class="video-slide-item"><video controls preload="metadata"><source src="video/video5.mp4" type="video/mp4"></video></div>
+<div class="video-slide-item"><video controls preload="metadata"><source src="video/video6.mp4" type="video/mp4"></video></div>
+<div class="video-slide-item"><video controls preload="metadata"><source src="video/video7.mp4" type="video/mp4"></video></div>
+<div class="video-slide-item"><video controls preload="metadata"><source src="video/video8.mp4" type="video/mp4"></video></div>
+<div class="video-slide-item"><video controls preload="metadata"><source src="video/video9.mp4" type="video/mp4"></video></div>
+<div class="video-slide-item"><video controls preload="metadata"><source src="video/video10.mp4" type="video/mp4"></video></div>
+<div class="video-slide-item"><video controls preload="metadata"><source src="video/video11.mp4" type="video/mp4"></video></div>
+<div class="video-slide-item"><video controls preload="metadata"><source src="video/video12.mp4" type="video/mp4"></video></div>
+</div>
+<div class="slider-dots" id="videoDots">
+<span class="dot active" onclick="goToVideoSlide(0)"></span>
+<span class="dot" onclick="goToVideoSlide(1)"></span>
+<span class="dot" onclick="goToVideoSlide(2)"></span>
+<span class="dot" onclick="goToVideoSlide(3)"></span>
+<span class="dot" onclick="goToVideoSlide(4)"></span>
+<span class="dot" onclick="goToVideoSlide(5)"></span>
+<span class="dot" onclick="goToVideoSlide(6)"></span>
+<span class="dot" onclick="goToVideoSlide(7)"></span>
+<span class="dot" onclick="goToVideoSlide(8)"></span>
+<span class="dot" onclick="goToVideoSlide(9)"></span>
+<span class="dot" onclick="goToVideoSlide(10)"></span>
+<span class="dot" onclick="goToVideoSlide(11)"></span>
+</div>
+</div>
+
+<div class="experience-banner">
+<div class="experience-content">
+<span class="section-subtitle" style="color: var(--gold-accent);">Cultura Ancestral</span>
+<h2>Guardianes del Archipiélago</h2>
+<p>En Ocean Guna Yala Tours operamos directamente con la comarca Guna Yala. Garantizamos un impacto socioeconómico directo y respetuoso con la cultura local.</p>
+<a href="https://wa.me/50765551803?text=Hola,%20me%20gustaría%20saber%20mas%20sobre%20sus%20paquetes%20culturales" class="btn-hero" style="background-color: var(--gold-accent); color: var(--navy-dark);" target="_blank">Escribir por WhatsApp</a>
+</div>
+<div>
+<img src="img/foto01.jpg" alt="Guardianes del Archipiélago" class="experience-img">
+</div>
+</div>
+</section>
+</div>
+
+
+<!-- ========================================== -->
+<!-- 2. PÁGINA: QUIÉNES SOMOS -->
+<!-- ========================================== -->
+<div id="page-quienes" class="page-view">
+<section class="section">
+<div class="section-header">
+<span class="section-subtitle">Nuestra Trayectoria</span>
+<h2>Quiénes Somos</h2>
+</div>
+<div class="content-box">
+<h3>Hospitalidad Auténtica en Guna Yala</h3>
+<p>Ocean Guna Yala Tours es una empresa operadora de turismo nativa comprometida con ofrecer experiencias inolvidables, seguras y genuinas en el archipiélago de San Blas. Trabajamos directamente mano a mano con las comunidades locales, garantizando un servicio de alta calidad enfocado en el respeto ambiental y el intercambio cultural.</p>
+<p>Nuestro equipo está formado por guías locales y capitanes expertos que conocen cada rincón secreto, arrecife y playa virgen de la comarca, asegurando que tu única preocupación sea disfrutar del paisaje caribeño.</p>
+
+<div class="gallery-grid-3">
+<img src="img/fotoo1.jpg" alt="Quiénes somos 1">
+<img src="img/fotoo2.jpg" alt="Quiénes somos 2">
+<img src="img/fotoo3.jpg" alt="Quiénes somos 3">
+</div>
+</div>
+</section>
+</div>
+
+
+<!-- ========================================== -->
+<!-- 3. PÁGINA: TOURS -->
+<!-- ========================================== -->
+<div id="page-tours" class="page-view">
+<section class="section">
+<div class="section-header">
+<span class="section-subtitle">Nuestros Paquetes</span>
+<h2>Explora Todos los Tours</h2>
+</div>
+<div class="grid-cards">
+<div class="card">
+<div class="card-img-wrapper"><span class="card-tag">El Más Elegido</span><img src="img/fot1.jpg" alt="Classic" class="card-img"></div>
+<div class="card-body">
+<h3 class="card-title">Classic Shared Day Tour</h3>
+<p class="card-desc">Recorrido por Isla Perro Chico, Isla Pelícano y la emblemática Piscina Natural con almuerzo incluido.</p>
+<div class="card-footer"><div class="price-container"><span class="price-label">Desde</span><span class="price">$110 USD</span></div>
+<div class="card-actions"><button class="btn-card-details" onclick="openModal('classic')">Ver detalles</button></div></div>
+</div>
+</div>
+<div class="card">
+<div class="card-img-wrapper"><span class="card-tag">Privado & Exclusivo</span><img src="img/fot2.jpg" alt="VIP" class="card-img"></div>
+<div class="card-body">
+<h3 class="card-title">VIP Private All-Inclusive Charter</h3>
+<p class="card-desc">Transporte 4x4 de alta gama y navegación privada personalizada exclusivamente para tu grupo o pareja.</p>
+<div class="card-footer"><div class="price-container"><span class="price-label">Desde</span><span class="price">$150 USD</span></div>
+<div class="card-actions"><button class="btn-card-details" onclick="openModal('vip')">Ver detalles</button></div></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+
+<!-- ========================================== -->
+<!-- 4. PÁGINA: CÓMO LLEGAR -->
+<!-- ========================================== -->
+<div id="page-comollegar" class="page-view">
+<section class="section">
+<div class="section-header">
+<span class="section-subtitle">Logística y Ubicación</span>
+<h2>Cómo Llegar a San Blas</h2>
+</div>
+<div class="content-box">
+<h3>Todo lo que Necesitas Saber para tu Viaje a San Blas (Guna Yala)</h3>
+<p>¡Prepárate para una experiencia inolvidable en el paraíso! A continuación, encontrarás todos los detalles sobre el transporte, requisitos y preguntas frecuentes para organizar tu viaje sin preocupaciones.</p>
+
+<div class="gallery-grid-3">
+<img src="img/photo1.jpg" alt="Cómo llegar 1">
+<img src="img/photo2.jpg" alt="Cómo llegar 2">
+<img src="img/photo3.jpg" alt="Cómo llegar 3">
+</div>
+</div>
+
+<div class="content-box" style="margin-top: 40px;">
+<h3>Preguntas Frecuentes (FAQ) & Información Importante</h3>
+
+<div class="modal-info-box">
+<h3>🚘 Transporte y Recogida</h3>
+<p>Tu aventura hacia la Comarca Guna Yala comienza desde muy temprano en la mañana para aprovechar al máximo el día:</p>
+<ul class="modal-list">
+<li><strong>Recogida directa:</strong> Pasamos por ti entre las 4:30 a.m. y 5:30 a.m. directamente en la puerta de tu hotel, hostal o residencia en la Ciudad de Panamá.</li>
+<li><strong>Trayecto en auto 4x4:</strong> Viajarás en vehículos 4x4 cómodos y especializados para recorrer el camino de montaña hacia el Puerto de Cartí (duración aproximada: 2.5 horas).</li>
+<li><strong>Traslado en lancha:</strong> Al llegar al puerto, abordarás una lancha rápida techada y con chaleco salvavidas para llevarte a las islas (duración aproximada: 30 a 40 minutos).</li>
+</ul>
+<p style="margin-top: 10px; font-weight: 600;">¿Viajas en tu propio auto? Solo está permitido el ingreso a la comarca en vehículos 4x4. Los autos sedán o de tracción simple no tienen permitido el acceso.</p>
+</div>
+
+<div class="modal-info-box">
+<h3>📋 Requisitos y Documentos Obligatorios</h3>
+<ul class="modal-list">
+<li><strong>Turistas extranjeros:</strong> Pasaporte original vigente.</li>
+<li><strong>Panameños y residentes:</strong> Cédula de identidad vigente.</li>
+<li><strong>Impuesto comarcal de entrada (Pago en efectivo en el puerto):</strong>
+  <ul style="margin-top: 5px; list-style: circle; padding-left: 20px;">
+    <li>Extranjeros: $22 USD por persona.</li>
+    <li>Nacionales y residentes: $7 USD por persona.</li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div class="modal-info-box">
+<h3>🏝️ Experiencias y Tours Disponibles</h3>
+<p>Ofrecemos opciones para que vivas San Blas a tu ritmo:</p>
+<ul class="modal-list">
+<li><strong>Pass Día (Tour de 1 día):</strong> Incluye la visita a 2 islas paradisíacas más la famosa Piscina Natural.</li>
+<li><strong>Tours con Alojamiento:</strong> Ideales para quienes desean quedarse a dormir en las islas y explorar más rincones del archipiélago.</li>
+<li><strong>Menú personalizado:</strong> El almuerzo caribeño clásico está incluido. Si tienes preferencias vegetarianas o requerimientos especiales, solo indícalo al momento de hacer tu reserva.</li>
+</ul>
+</div>
+
+<div class="modal-info-box">
+<h3>❓ Preguntas Frecuentes</h3>
+
+<div class="faq-block-group">
+<h4>🌊 Sobre las Islas y el Entorno</h4>
+<ul class="modal-list">
+<li><strong>¿Cuál es la mejor isla para hospedarse?</strong> No hay una sola isla "perfecta", ¡cada una tiene su encanto! Algunas ofrecen total tranquilidad y otras son ideales para snorkel o aventura. Cuéntanos tu estilo de viaje y te ayudaremos a elegir la opción ideal.</li>
+<li><strong>¿Cuántas islas hay?</strong> El archipiélago cuenta con unos 365 cayos e islas, pero solo alrededor de 40 están habilitadas para turismo y alojamiento.</li>
+<li><strong>¿Hay tiburones?</strong> No. Las aguas costeras de San Blas son poco profundas, tranquilas y muy seguras para nadar rodeado de peces coloridos y vida marina amigable.</li>
+</ul>
+</div>
+
+<div class="faq-block-group">
+<h4>💳 Pagos y Precios</h4>
+<ul class="modal-list">
+<li><strong>¿Qué métodos de pago aceptan?</strong> Aceptamos transferencias bancarias y pago en efectivo el día del tour.</li>
+<li><strong>¿En qué moneda están los precios?</strong> Todos nuestros precios están expresados en dólares americanos ($ USD).</li>
+</ul>
+</div>
+
+<div class="faq-block-group">
+<h4>📵 Conectividad y Servicios</h4>
+<ul class="modal-list">
+<li><strong>¿Hay señal o internet en las islas?</strong> La señal es limitada o nula en la mayoría de las islas, lo que convierte a San Blas en el destino perfecto para desconectarte del estrés y relajarte.</li>
+<li><strong>¿Hay electricidad?</strong> Algunas islas cuentan con energía solar limitada durante ciertas horas de la noche. Te recomendamos traer una batería externa (power bank) cargada para tus dispositivos.</li>
+</ul>
+</div>
+
+<div class="faq-block-group">
+<h4>🎒 Recomendaciones y Políticas</h4>
+<ul class="modal-list">
+<li><strong>¿Qué debo llevar?</strong> No olvides traer tu propia toalla de playa, bloqueador solar y artículos personales.</li>
+<li><strong>¿Puedo llevar cooler o bebidas?</strong> Sí, puedes traer tus snacks o cooler, aunque algunas islas cobran un pequeño importe por ingreso de bebidas externas.</li>
+<li><strong>¿Se permiten mascotas?</strong> Por normativas de la Comarca Guna Yala, no se permiten mascotas en los tours compartidos.</li>
+</ul>
+</div>
+</div>
+
+<div class="gallery-grid-3" style="margin-top: 30px;">
+<img src="img/potoo1.jpg" alt="Preguntas frecuentes 1">
+<img src="img/potoo2.jpg" alt="Preguntas frecuentes 2">
+<img src="img/potoo3.jpg" alt="Preguntas frecuentes 3">
+</div>
+</div>
+</section>
+</div>
+
+
+<!-- ========================================== -->
+<!-- 5. PÁGINA: GALERÍA -->
+<!-- ========================================== -->
+<div id="page-galeria" class="page-view">
+<section class="section">
+<div class="section-header">
+<span class="section-subtitle">Galería Multimedia</span>
+<h2>Fotografías Panorámicas (40 Imágenes Exclusivas)</h2>
+</div>
+<div class="photo-slider-wrapper">
+<button class="slider-btn prev" onclick="movePhotoSlide(-1)">&#10094;</button>
+<button class="slider-btn next" onclick="movePhotoSlide(1)">&#10095;</button>
+<div class="photo-slider-track" id="photoTrackGaleria"></div>
+</div>
+</section>
+</div>
+
+
+<!-- ========================================== -->
+<!-- 6. PÁGINA: OPINIONES -->
+<!-- ========================================== -->
+<div id="page-opiniones" class="page-view">
+<section class="section" style="padding-top: 20px;">
+<div class="reviews-full-wrapper" style="margin: 0 auto;">
+<h2 class="reviews-section-title">Opiniones de Nuestros Visitantes</h2>
+<div class="reviews-slider-container">
+<button class="slider-btn prev" onclick="moveReviewSlide(-1)">&#10094;</button>
+<button class="slider-btn next" onclick="moveReviewSlide(1)">&#10095;</button>
+<div class="reviews-slider-track" id="reviewTrack">
+
+<!-- RESEÑA 1 -->
+<div class="review-card-item">
+<div class="review-box">
+<div class="review-author-flex">
+<div class="review-avatar">CM</div>
+<div class="review-author-info"><h4>Carlos M.</h4><span class="review-location">Madrid, España</span></div>
+</div>
+<div class="review-stars-date"><span class="review-stars">★★★★★</span><span class="review-date">Enero de 2026</span></div>
+<p class="review-text" id="rev-text-1">"Super service! Everything was extremely well organized from the pickup to the island transfer. Maylen and the team took care of every single detail. Exceeded all our expectations!"</p>
+<button class="translate-review-btn" onclick="toggleReviewTranslation(1, 'Super service! Everything was extremely well organized from the pickup to the island transfer. Maylen and the team took care of every single detail. Exceeded all our expectations!', '¡Súper servicio! Todo estuvo extremadamente bien organizado desde la recogida hasta el traslado a la isla. Maylen y el equipo se encargaron de cada detalle. ¡Superó todas nuestras expectativas!')">🌐 Traducir a Español</button>
+</div>
+</div>
+
+<!-- RESEÑA 2 -->
+<div class="review-card-item">
+<div class="review-box">
+<div class="review-author-flex">
+<div class="review-avatar">FA</div>
+<div class="review-author-info"><h4>Fernando y Ana</h4><span class="review-location">Santiago, Chile</span></div>
+</div>
+<div class="review-stars-date"><span class="review-stars">★★★★★</span><span class="review-date">Marzo de 2026</span></div>
+<p class="review-text" id="rev-text-2">"La mejor opción si tienes poco tiempo. La logística del viaje desde Panamá fue impecable, el traslado en bote súper seguro y el almuerzo de pescado fresco frente al mar estuvo delicioso. Volvería a repetir sin pensarlo."</p>
+<button class="translate-review-btn" onclick="toggleReviewTranslation(2, 'La mejor opción si tienes poco tiempo. La logística del viaje desde Panamá fue impecable, el traslado en bote súper seguro y el almuerzo de pescado fresco frente al mar estuvo delicioso. Volvería a repetir sin pensarlo.', 'The best option if you have limited time. The logistics from Panama were flawless, the boat transfer was super safe, and the fresh seafood lunch by the ocean was delicious. Would repeat without hesitation.')">🌐 Translate to English</button>
+</div>
+</div>
+
+<!-- RESEÑA 3 -->
+<div class="review-card-item">
+<div class="review-box">
+<div class="review-author-flex">
+<div class="review-avatar">SL</div>
+<div class="review-author-info"><h4>Sarah L.</h4><span class="review-location">Toronto, Canadá</span></div>
+</div>
+<div class="review-stars-date"><span class="review-stars">★★★★★</span><span class="review-date">Marzo de 2026</span></div>
+<p class="review-text" id="rev-text-3">"Do not leave Panama without booking a San Blas tour with Ocean Guna Yala. Crystal-clear turquoise waters, pristine white sand, and total peace. An absolute paradise on earth."</p>
+<button class="translate-review-btn" onclick="toggleReviewTranslation(3, 'Do not leave Panama without booking a San Blas tour with Ocean Guna Yala. Crystal-clear turquoise waters, pristine white sand, and total peace. An absolute paradise on earth.', 'No te vayas de Panamá sin reservar un tour a San Blas con Ocean Guna Yala. Aguas turquesas cristalinas, arena blanca virgen y paz total. Un verdadero paraíso en la tierra.')">🌐 Traducir a Español</button>
+</div>
+</div>
+
+<!-- RESEÑA 4 -->
+<div class="review-card-item">
+<div class="review-box">
+<div class="review-author-flex">
+<div class="review-avatar">RP</div>
+<div class="review-author-info"><h4>Roberto P.</h4><span class="review-location">Buenos Aires, Argentina</span></div>
+</div>
+<div class="review-stars-date"><span class="review-stars">★★★★★</span><span class="review-date">Febrero de 2026</span></div>
+<p class="review-text" id="rev-text-4">"El lugar perfecto para desconectarse del estrés y conectar con la naturaleza. Dormir en las cabañas sobre el agua y escuchar el mar por la noche es una experiencia única. Gracias a todo el equipo por cuidar cada detalle de la estancia."</p>
+<button class="translate-review-btn" onclick="toggleReviewTranslation(4, 'El lugar perfecto para desconectarse del estrés y conectar con la naturaleza. Dormir en las cabañas sobre el agua y escuchar el mar por la noche es una experiencia única. Gracias a todo el equipo por cuidar cada detalle de la estancia.', 'The perfect place to disconnect from stress and connect with nature. Sleeping in the overwater cabins and listening to the ocean at night is a unique experience. Thanks to the whole team for taking care of every detail.')">🌐 Translate to English</button>
+</div>
+</div>
+
+<!-- RESEÑA 5 -->
+<div class="review-card-item">
+<div class="review-box">
+<div class="review-author-flex">
+<div class="review-avatar">DR</div>
+<div class="review-author-info"><h4>David & Jessica R.</h4><span class="review-location">Miami, FL, EE.UU.</span></div>
+</div>
+<div class="review-stars-date"><span class="review-stars">★★★★★</span><span class="review-date">Febrero de 2026</span></div>
+<p class="review-text" id="rev-text-5">"An unforgettable family trip! Not only did we visit breathtaking islands, but we also learned so much about the beautiful Guna culture. Warm hospitality and great communication throughout."</p>
+<button class="translate-review-btn" onclick="toggleReviewTranslation(5, 'An unforgettable family trip! Not only did we visit breathtaking islands, but we also learned so much about the beautiful Guna culture. Warm hospitality and great communication throughout.', '¡Un viaje familiar inolvidable! No solo visitamos islas impresionantes, sino que también aprendimos mucho sobre la hermosa cultura Guna. Cálida hospitalidad y excelente comunicación en todo momento.')">🌐 Traducir a Español</button>
+</div>
+</div>
+
+<!-- RESEÑA 6 -->
+<div class="review-card-item">
+<div class="review-box">
+<div class="review-author-flex">
+<div class="review-avatar">MS</div>
+<div class="review-author-info"><h4>Mariana S.</h4><span class="review-location">Medellín, Colombia</span></div>
+</div>
+<div class="review-stars-date"><span class="review-stars">★★★★★</span><span class="review-date">Enero de 2026</span></div>
+<p class="review-text" id="rev-text-6">"Si buscas fotos increíbles y paisajes de tarjeta postal, este es el tour indicado. Las aguas turquesas, el snorkel en los arrecifes y las estrellas de mar en las piscinas naturales son verdaderamente reales. ¡Superó mis expectativas!"</p>
+<button class="translate-review-btn" onclick="toggleReviewTranslation(6, 'Si buscas fotos increíbles y paisajes de tarjeta postal, este es el tour indicado. Las aguas turquesas, el snorkel en los arrecifes y las estrellas de mar en las piscinas naturales son verdaderamente reales. ¡Superó mis expectativas!', 'If you are looking for amazing pictures and postcard landscapes, this is the right tour. The turquoise waters, reef snorkeling, and starfish in natural pools are 100% real. It exceeded all my expectations!')">🌐 Translate to English</button>
+</div>
+</div>
+
+<!-- RESEÑA 7 -->
+<div class="review-card-item">
+<div class="review-box">
+<div class="review-author-flex">
+<div class="review-avatar">MT</div>
+<div class="review-author-info"><h4>Marco T.</h4><span class="review-location">Roma, Italia</span></div>
+</div>
+<div class="review-stars-date"><span class="review-stars">★★★★★</span><span class="review-date">Diciembre de 2025</span></div>
+<p class="review-text" id="rev-text-7">"Breathtaking views and untouched beaches. The boat ride, the delicious fresh seafood lunch, and the coral reefs for snorkeling made this day tour the highlight of our vacation."</p>
+<button class="translate-review-btn" onclick="toggleReviewTranslation(7, 'Breathtaking views and untouched beaches. The boat ride, the delicious fresh seafood lunch, and the coral reefs for snorkeling made this day tour the highlight of our vacation.', 'Vistas impresionantes y playas vírgenes. El paseo en bote, el delicioso almuerzo de mariscos frescos y los arrecifes de coral para hacer snorkel hicieron de este tour el punto culminante de nuestras vacaciones.')">🌐 Traducir a Español</button>
+</div>
+</div>
+
+<!-- RESEÑA 8 -->
+<div class="review-card-item">
+<div class="review-box">
+<div class="review-author-flex">
+<div class="review-avatar">GH</div>
+<div class="review-author-info"><h4>Gabriel H.</h4><span class="review-location">Ciudad de México, México</span></div>
+</div>
+<div class="review-stars-date"><span class="review-stars">★★★★★</span><span class="review-date">Diciembre de 2025</span></div>
+<p class="review-text" id="rev-text-8">"La atención del equipo fue excepcional de principio a fin. Nos trataron como a la familia y nos explicaron la historia y tradiciones de Guna Yala con mucho respeto y pasión. Una experiencia auténtica que no se encuentra en cualquier tour."</p>
+<button class="translate-review-btn" onclick="toggleReviewTranslation(8, 'La atención del equipo fue excepcional de principio a fin. Nos trataron como a la familia y nos explicaron la historia y tradiciones de Guna Yala con mucho respeto y pasión. Una experiencia auténtica que no se encuentra en cualquier tour.', 'The service from the team was exceptional from start to finish. They treated us like family and explained the history and traditions of Guna Yala with great respect and passion. An authentic experience you won\'t find in just any tour.')">🌐 Translate to English</button>
+</div>
+</div>
+
+<!-- RESEÑA 9 -->
+<div class="review-card-item">
+<div class="review-box">
+<div class="review-author-flex">
+<div class="review-avatar">EW</div>
+<div class="review-author-info"><h4>Emma W.</h4><span class="review-location">Londres, Reino Unido</span></div>
+</div>
+<div class="review-stars-date"><span class="review-stars">★★★★★</span><span class="review-date">Noviembre de 2025</span></div>
+<p class="review-text" id="rev-text-9">"Punctual, safe, and professional. Traveling through the mountains to Port Cartí can be tricky, but the logistics handled by Ocean Guna Yala made it completely seamless and stress-free."</p>
+<button class="translate-review-btn" onclick="toggleReviewTranslation(9, 'Punctual, safe, and professional. Traveling through the mountains to Port Cartí can be tricky, but the logistics handled by Ocean Guna Yala made it completely seamless and stress-free.', 'Puntual, seguro y profesional. Viajar a través de las montañas hacia Puerto Cartí puede ser complicado, pero la logística gestionada por Ocean Guna Yala lo hizo completamente fluido y libre de estrés.')">🌐 Traducir a Español</button>
+</div>
+</div>
+
+<!-- RESEÑA 10 -->
+<div class="review-card-item">
+<div class="review-box">
+<div class="review-author-flex">
+<div class="review-avatar">VC</div>
+<div class="review-author-info"><h4>Valeria C.</h4><span class="review-location">San José, Costa Rica</span></div>
+</div>
+<div class="review-stars-date"><span class="review-stars">★★★★★</span><span class="review-date">Noviembre de 2025</span></div>
+<p class="review-text" id="rev-text-10">"Fuimos en grupo de amigos y el paquete completo con transporte 4x4 y lancha nos facilitó todo. El recorrido por las diferentes islas estuvo genial, con tiempo suficiente para nadar y disfrutar de la playa sin prisas."</p>
+<button class="translate-review-btn" onclick="toggleReviewTranslation(10, 'Fuimos en grupo de amigos y el paquete completo con transporte 4x4 y lancha nos facilitó todo. El recorrido por las diferentes islas estuvo genial, con tiempo suficiente para nadar y disfrutar de la playa sin prisas.', 'We went with a group of friends and the full package with 4x4 transport and boat made everything so easy. The island hopping was great, with plenty of time to swim and enjoy the beach without rushing.')">🌐 Translate to English</button>
+</div>
+</div>
+
+<!-- RESEÑA 11 -->
+<div class="review-card-item">
+<div class="review-box">
+<div class="review-author-flex">
+<div class="review-avatar">LK</div>
+<div class="review-author-info"><h4>Liam K.</h4><span class="review-location">Sídney, Australia</span></div>
+</div>
+<div class="review-stars-date"><span class="review-stars">★★★★★</span><span class="review-date">Febrero de 2026</span></div>
+<p class="review-text" id="rev-text-11">"Pure magic! The islands are out of this world, and the local guide service made us feel completely welcome and safe. 100% recommended!"</p>
+<button class="translate-review-btn" onclick="toggleReviewTranslation(11, 'Pure magic! The islands are out of this world, and the local guide service made us feel completely welcome and safe. 100% recommended!', '¡Pura magia! Las islas son de otro mundo y el servicio de guías locales nos hizo sentir completamente bienvenidos y seguros. ¡100% recomendado!')">🌐 Traducir a Español</button>
+</div>
+</div>
+
+<!-- RESEÑA 12 -->
+<div class="review-card-item">
+<div class="review-box">
+<div class="review-author-flex">
+<div class="review-avatar">RS</div>
+<div class="review-author-info"><h4>Rose & Sof</h4><span class="review-location">París, Francia</span></div>
+</div>
+<div class="review-stars-date"><span class="review-stars">★★★★★</span><span class="review-date">Enero de 2026</span></div>
+<p class="review-text" id="rev-text-12">"We spent a couple of days staying in an overwater cabin and it was pure romance and relaxation. Waking up to the sound of the ocean and those crystal waters was priceless."</p>
+<button class="translate-review-btn" onclick="toggleReviewTranslation(12, 'We spent a couple of days staying in an overwater cabin and it was pure romance and relaxation. Waking up to the sound of the ocean and those crystal waters was priceless.', 'Pasamos un par de días alojándonos en una cabaña sobre el agua y fue puro romance y relajación. Despertarse con el sonido del océano y esas aguas cristalinas no tuvo precio.')">🌐 Traducir a Español</button>
+</div>
+</div>
+
+<!-- RESEÑA 13 -->
+<div class="review-card-item">
+<div class="review-box">
+<div class="review-author-flex">
+<div class="review-avatar">KB</div>
+<div class="review-author-info"><h4>Kevin B.</h4><span class="review-location">Chicago, IL, EE.UU.</span></div>
+</div>
+<div class="review-stars-date"><span class="review-stars">★★★★★</span><span class="review-date">Marzo de 2026</span></div>
+<p class="review-text" id="rev-text-13">"Amazing value for an unforgettable day. Excellent communication, friendly locals, and beaches that look even better than the pictures. We will definitely come back!"</p>
+<button class="translate-review-btn" onclick="toggleReviewTranslation(13, 'Amazing value for an unforgettable day. Excellent communication, friendly locals, and beaches that look even better than the pictures. We will definitely come back!', 'Increíble valor por un día inolvidable. Excelente comunicación, lugareños amables y playas que se ven aún mejor que en las fotos. ¡Definitivamente volveremos!')">🌐 Traducir a Español</button>
+</div>
+</div>
+
+</div>
+<div class="slider-dots" id="reviewDots"></div>
+</div>
+
+<div class="review-form-container">
+<h3>¿Hiciste el tour con nosotros? Déjanos tu opinión</h3>
+<form id="addReviewForm" onsubmit="submitReview(event)">
+<div class="form-group-row">
+<input type="text" id="reviewerName" class="form-input" placeholder="Tu nombre" required>
+<select id="reviewerRating" class="form-select" required>
+<option value="5">★★★★★ (5 estrellas)</option>
+<option value="4">★★★★ (4 estrellas)</option>
+<option value="3">★★★ (3 estrellas)</option>
+<option value="2">★★ (2 estrellas)</option>
+<option value="1">★ (1 estrella)</option>
+</select>
+</div>
+<textarea id="reviewerComment" class="form-textarea" placeholder="Escribe detalles de tu experiencia..." required></textarea>
+<button type="submit" class="btn-submit-review">Publicar Reseña</button>
+</form>
+</div>
+</div>
+</section>
+</div>
+
+
+<!-- ========================================== -->
+<!-- 7. PÁGINA: CULTURA GUNA -->
+<!-- ========================================== -->
+<div id="page-cultura" class="page-view">
+<section class="section">
+  <!-- ENCABEZADO SUPERIOR CON TÍTULO, SUBTÍTULO Y GALERÍA ESTILO GRID -->
+  <div style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: start; margin-bottom: 50px;">
+    <div>
+      <h1 style="font-family: 'Playfair Display', Arial, serif; font-size: 2.8rem; color: var(--navy-dark); font-weight: 700; line-height: 1.15; text-transform: uppercase; margin-bottom: 18px;">
+        Cultura Guna: Historia, Tradición y Conservación
+      </h1>
+      <p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 12px; line-height: 1.6; font-weight: 500;">
+        Descubre la fascinante historia, la rica autonomía, el arte ancestral y las costumbres vivas del archipiélago de San Blas con Ocean Guna Yala Tours.
+      </p>
+      <p style="font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
+        Publicado en Ocean Guna Yala Tours
+      </p>
+    </div>
+
+    <!-- GRILLA DE 3 IMÁGENES DERECHA -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+      <img src="img/poto1.jpg" alt="Cultura Guna 1" style="grid-column: span 2; width: 100%; height: 210px; object-fit: cover; border-radius: 12px; box-shadow: var(--shadow-subtle);">
+      <img src="img/poto2.jpg" alt="Cultura Guna 2" style="width: 100%; height: 110px; object-fit: cover; border-radius: 10px; box-shadow: var(--shadow-subtle);">
+      <img src="img/poto3.jpg" alt="Cultura Guna 3" style="width: 100%; height: 110px; object-fit: cover; border-radius: 10px; box-shadow: var(--shadow-subtle);">
+    </div>
+  </div>
+
+  <!-- ESTRUCTURA PRINCIPAL DE 2 COLUMNAS (SIDEBAR + CONTENIDO) -->
+  <div style="display: grid; grid-template-columns: 280px 1fr; gap: 40px; align-items: start;">
+    
+    <!-- COLUMNA IZQUIERDA: ÍNDICE Y BOTÓN CONTÁCTENOS -->
+    <aside style="position: sticky; top: 100px;">
+      <div style="background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 16px; padding: 25px; box-shadow: var(--shadow-subtle); margin-bottom: 25px;">
+        <h3 style="font-size: 0.9rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: var(--navy-dark); margin-bottom: 18px; border-bottom: 2px solid var(--emerald-accent); padding-bottom: 8px;">
+          ÍNDICE DE CONTENIDOS
+        </h3>
+        <ol style="list-style: none; padding-left: 0; margin: 0;">
+          <li style="margin-bottom: 14px;">
+            <a href="#guna-molas" style="text-decoration: none; color: #D97706; font-size: 0.88rem; font-weight: 700; transition: color 0.2s;" onmouseover="this.style.color='var(--emerald-accent)'" onmouseout="this.style.color='#D97706'">
+              1. El Arte de las Molas e Indumentaria
+            </a>
+          </li>
+          <li style="margin-bottom: 14px;">
+            <a href="#guna-organizacion" style="text-decoration: none; color: #D97706; font-size: 0.88rem; font-weight: 700; transition: color 0.2s;" onmouseover="this.style.color='var(--emerald-accent)'" onmouseout="this.style.color='#D97706'">
+              2. Organización Social y Casa del Congreso
+            </a>
+          </li>
+          <li style="margin-bottom: 0;">
+            <a href="#guna-turismo" style="text-decoration: none; color: #D97706; font-size: 0.88rem; font-weight: 700; transition: color 0.2s;" onmouseover="this.style.color='var(--emerald-accent)'" onmouseout="this.style.color='#D97706'">
+              3. Turismo Sostenible y Respetuoso
+            </a>
+          </li>
+        </ol>
+      </div>
+
+      <!-- CAJA DE CONTACTO CON WHATSAPP -->
+      <div style="text-align: center; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 25px; box-shadow: var(--shadow-subtle);">
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px; font-weight: 600; line-height: 1.5;">
+          ¡Ponte en contacto con nosotros para obtener más información!
+        </p>
+        <a href="https://wa.me/50765551803?text=Hola,%20deseo%20más%20información%20sobre%20la%20cultura%20y%20tours" target="_blank" style="background-color: #FF9900; color: #FFFFFF; border: none; padding: 12px 24px; border-radius: 30px; font-weight: 700; font-size: 0.9rem; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.3s ease; width: 100%; box-shadow: 0 4px 12px rgba(255, 153, 0, 0.3);" onmouseover="this.style.backgroundColor='#E68A00'" onmouseout="this.style.backgroundColor='#FF9900'">
+          Contáctenos
+        </a>
+      </div>
+    </aside>
+
+    <!-- COLUMNA DERECHA: CONTENIDO DETALLADO -->
+    <main class="content-box" style="padding: 40px; border-radius: 20px;">
+      
+      <!-- INTRODUCCIÓN GENERAL -->
+      <article style="margin-bottom: 35px;">
+        <p style="font-size: 0.98rem; line-height: 1.8; color: var(--text-dark); margin-bottom: 15px;">
+          La Comarca Guna Yala es reconocida globalmente por su firme autonomía política y territorial, impulsada tras la histórica Revolución Guna de 1925, un acontecimiento fundamental que permitió al pueblo Guna preservar sus leyes ancestrales, su estructura de gobierno tradicional y el control directo sobre su territorio.
+        </p>
+        <p style="font-size: 0.98rem; line-height: 1.8; color: var(--text-dark);">
+          Este paradisíaco archipiélago en el Caribe panameño cuenta con más de 365 islas e islotes, de las cuales alrededor de 36 albergan comunidades habitadas. El entorno natural está rodeado por frágiles arrecifes de coral, aguas turquesas y palmeras de coco, conservados bajo un riguroso modelo de protección ambiental comunitario sostenido por el respeto profundo del pueblo Guna hacia la naturaleza y sus recursos marinos y terrestres.
+        </p>
+      </article>
+
+      <!-- SECCIÓN 1 -->
+      <article id="guna-molas" style="margin-bottom: 35px; scroll-margin-top: 100px;">
+        <h2 style="font-family: 'Playfair Display', Arial, serif; font-size: 1.6rem; color: var(--navy-dark); font-weight: 700; margin-bottom: 15px;">
+          1. El Arte de las Molas y la Indumentaria Tradicional
+        </h2>
+        <p style="font-size: 0.98rem; line-height: 1.8; color: var(--text-dark); margin-bottom: 15px;">
+          La expresión artística más emblemática de la comarca son las molas, complejas piezas textiles cosidas a mano por las mujeres gunas mediante la técnica de aplique inverso. Cada mola plasma motivos geométricos, elementos de la flora y fauna local, y representaciones de la cosmovisión Guna.
+        </p>
+        <p style="font-size: 0.98rem; line-height: 1.8; color: var(--text-dark);">
+          El vestuario tradicional se complementa con la pañoleta roja y amarilla (mardi), aros de oro en la nariz, y las wainini o wini, vistosas pulseras de chaquiras confeccionadas con meticulosos patrones que adornan los brazos y piernas de las mujeres como símbolo de identidad cultural y protección espiritual.
+        </p>
+      </article>
+
+      <!-- SECCIÓN 2 -->
+      <article id="guna-organizacion" style="margin-bottom: 35px; scroll-margin-top: 100px;">
+        <h2 style="font-family: 'Playfair Display', Arial, serif; font-size: 1.6rem; color: var(--navy-dark); font-weight: 700; margin-bottom: 15px;">
+          2. Organización Social y la Casa del Congreso
+        </h2>
+        <p style="font-size: 0.98rem; line-height: 1.8; color: var(--text-dark);">
+          La estructura comunitaria se fundamenta en la Ipekarpa u Onmaked Nega (la Casa del Congreso), el centro político y espiritual de cada isla. En este espacio, los líderes tradicionales o ancianos (Sailamagan) entonan cantos sagrados e historias ancestrales para transmitir la memoria histórica, resolver asuntos comunitarios y orientar a las nuevas generaciones.
+        </p>
+      </article>
+
+      <!-- SECCIÓN 3 -->
+      <article id="guna-turismo" style="scroll-margin-top: 100px;">
+        <h2 style="font-family: 'Playfair Display', Arial, serif; font-size: 1.6rem; color: var(--navy-dark); font-weight: 700; margin-bottom: 15px;">
+          3. Turismo Sostenible y Respetuoso
+        </h2>
+        <p style="font-size: 0.98rem; line-height: 1.8; color: var(--text-dark);">
+          Al viajar con Ocean Guna Yala Tours, tu visita contribuye de manera directa al desarrollo de la economía local y a la preservación de este patrimonio natural y cultural. Promovemos un intercambio cultural auténtico y respetuoso, garantizando que cada recorrido beneficie a las familias locales que custodian el archipiélago con orgullo.
+        </p>
+      </article>
+
+    </main>
+  </div>
+</section>
+</div>
+
+
+<!-- ========================================== -->
+<!-- 8. PÁGINA: CONTACTO -->
+<!-- ========================================== -->
+<div id="page-contacto" class="page-view">
+<section class="section">
+<div class="contact-section-container">
+<div class="contact-col-left">
+<h2>DATOS DE CONTACTO</h2>
+
+<div class="contact-info-block">
+<h3>Teléfonos:</h3>
+<p>+507 6555-1803</p>
+</div>
+
+<div class="contact-info-block">
+<h3>Email:</h3>
+<a href="mailto:info@oceangunayalatours.com" class="email-link">info@oceangunayalatours.com</a>
+</div>
+
+<div class="contact-info-block">
+<p>Comunidad Guna Yala</p>
+<p>San Blas Panamá</p>
+</div>
+
+<div class="contact-social-icons">
+<a href="https://wa.me/50765551803" class="social-icon-btn ws-btn" target="_blank" title="WhatsApp">
+<svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+<a href="https://www.instagram.com/raymartinez.04" class="social-icon-btn ig-btn" target="_blank" title="Instagram">
+<svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.262-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+</a>
+<a href="https://www.facebook.com/share/19uy79CnRM/" class="social-icon-btn fb-btn" target="_blank" title="Facebook">
+<svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.592 9 4.415V8z"/></svg>
+</a>
+</div>
+</div>
+
+<div class="contact-col-right">
+<h2>FORMULARIO</h2>
+<form onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito!'); this.reset();">
+<div class="contact-form-group">
+<label for="contactName">Nombre (requerido)</label>
+<input type="text" id="contactName" required>
+</div>
+
+<div class="contact-form-group">
+<label for="contactEmail">Tu correo electrónico (requerido)</label>
+<input type="email" id="contactEmail" required>
+</div>
+
+<div class="contact-form-group">
+<label for="contactSubject">Asunto</label>
+<input type="text" id="contactSubject">
+</div>
+
+<div class="contact-form-group">
+<label for="contactMessage">Mensaje</label>
+<textarea id="contactMessage" required></textarea>
+</div>
+
+<button type="submit" class="btn-contact-send">Enviar</button>
+</form>
+</div>
+</div>
+</section>
+</div>
+
+
+<!-- FOOTER GLOBAL -->
+<footer>
+<div class="footer-content">
+<div class="footer-brand">
+<h3>OCEAN GUNA YALA TOURS (SAN BLAS)</h3>
+<p>Experiencias turísticas sostenibles y de alta gama en la Comarca Guna Yala, Panamá.</p>
+</div>
+<div>
+<h4 style="color: var(--white-pure); margin-bottom: 20px;">Navegación</h4>
+<p><a onclick="switchPage('home')" style="color: #94A3B8; text-decoration: none; cursor:pointer;">home</a></p>
+<p><a onclick="switchPage('tours')" style="color: #94A3B8; text-decoration: none; cursor:pointer;">tours</a></p>
+<p><a onclick="switchPage('galeria')" style="color: #94A3B8; text-decoration: none; cursor:pointer;">galeria</a></p>
+<p><a onclick="switchPage('opiniones')" style="color: #94A3B8; text-decoration: none; cursor:pointer;">Opiniones</a></p>
+</div>
+<div>
+<h4 style="color: var(--white-pure); margin-bottom: 20px;">Atención Inmediata</h4>
+<p>WhatsApp: <a href="https://wa.me/50765551803" class="whatsapp-link-footer" target="_blank">+507 6555-1803</a></p>
+<p>Email: info@oceangunayalatours.com</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 OCEAN GUNA YALA TOURS (SAN BLAS). Todos los derechos reservados.</p>
+</div>
+</footer>
+
+<!-- INSIGNIA FLOTANTE DE RESEÑAS DE GOOGLE -->
+<a onclick="switchPage('opiniones')" class="google-reviews-floating-badge" title="Ver opiniones en Google">
+<div class="google-logo-wrapper">
+<svg width="28" height="28" viewBox="0 0 24 24">
+<path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+<path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+<path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+<path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+</svg>
+</div>
+<div class="google-reviews-info">
+<div class="google-rating-row">
+<span class="google-score">4.9</span>
+<span class="google-stars">★★★★★</span>
+</div>
+<span class="google-reviews-count">13 REVIEWS</span>
+</div>
+<div class="google-arrow-icon">
+<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+</div>
+</a>
+
+<!-- WIDGET FLOTANTE WHATSAPP -->
+<button class="whatsapp-float-trigger" onclick="toggleChat()">
+<span class="notification-badge"></span>
+<svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</button>
+
+<div class="whatsapp-chat-box" id="chatBox">
+<div class="chat-header">
+<div class="chat-agent-info">
+<div class="chat-avatar-wrapper">
+<img src="img/tour_classic.jpg" alt="Ray" class="chat-avatar">
+<span class="status-dot"></span>
+</div>
+<div>
+<div class="chat-agent-name">Ray</div>
+<div class="chat-status">Responde en minutos</div>
+</div>
+</div>
+<button class="chat-close-btn" onclick="toggleChat()">×</button>
+</div>
+<div class="chat-body">
+<div class="chat-message-bubble">
+<div class="chat-message-sender">Ray</div>
+👋 Hola, soy Ray. Estoy aquí para ayudarte a encontrar el tour perfecto en Guna Yala. 🌴🌊
+<div class="chat-time">Ahora</div>
+</div>
+</div>
+<div class="chat-footer">
+<a href="https://wa.me/50765551803?text=Hola%20Ray,%20quiero%20informacion%20sobre%20los%20tours" class="chat-action-btn" target="_blank">Chatear con Ray</a>
+</div>
+</div>
+
+<!-- VENTANA MODAL DE DETALLES -->
+<div class="modal-overlay" id="infoModal">
+<div class="modal-container">
+<button class="modal-close-btn" onclick="closeModal()">&times;</button>
+<img id="modalImg" src="" alt="Detalles Tour" class="modal-banner">
+<div class="modal-content-body">
+<div class="modal-header-flex">
+<h2 id="modalTitle" class="modal-title">Título</h2>
+<div id="modalPrice" class="modal-price-badge">$0 USD</div>
+</div>
+
+<div class="modal-section-title">DESCRIPCIÓN</div>
+<p id="modalDescription" class="modal-text"></p>
+
+<div class="modal-info-box">
+<div class="modal-section-title">ITINERARIO SUGERIDO</div>
+<ul id="modalItinerary" class="modal-list itinerary-list"></ul>
+</div>
+
+<div class="modal-info-box">
+<div class="modal-section-title">INCLUYE Y MENÚ DE COMIDAS</div>
+<ul id="modalIncludes" class="modal-list"></ul>
+</div>
+
+<!-- CONTENEDOR DINÁMICO DE TARIFAS (Se oculta para VIP y se muestra para Classic) -->
+<div class="modal-info-box" id="modalTarifasContainer">
+<h3>Tarifas</h3>
+<ul class="modal-list">
+<li>$110.00 desde Ciudad de Panamá</li>
+<li>$65.00 si vienes en tu propio auto</li>
+<li>Pregunta por nuestros servicios de autos privados</li>
+</ul>
+<p style="margin-top: 10px; font-weight: 600;">No incluye: Pagos comarcales ($22 extranjeros; $7 nacionales o residentes)</p>
+</div>
+
+<div class="modal-info-box">
+<h3>¿Qué debo llevar al Tour de San Blas?</h3>
+<ul class="modal-list">
+<li>Pasaporte original (¡obligatorio!).</li>
+<li>Cámara fotográfica.</li>
+<li>Toalla de playa y vestido de baño.</li>
+<li>Muda de ropa extra y bolsa para ropa mojada.</li>
+<li>Repelente de mosquitos.</li>
+<li>Bloqueador solar biodegradable.</li>
+<li>Pastillas para el mareo (carretera con curvas).</li>
+</ul>
+</div>
+
+<div class="modal-footer-btn">
+<a id="modalReserveLink" href="#" target="_blank" class="btn-modal-reserve">RESERVAR AHORA POR WHATSAPP</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- SCRIPTS DE CONTROL Y FUNCIONALIDAD -->
+<script>
+function toggleLanguageMenu() {
+  const dropdown = document.getElementById('languageDropdown');
+  dropdown.classList.toggle('show');
+}
+
+function changeLanguage(langCode) {
+  const selectObj = document.querySelector('.goog-te-combo');
+  if (selectObj) {
+    selectObj.value = langCode;
+    selectObj.dispatchEvent(new Event('change'));
+  }
+  document.getElementById('languageDropdown').classList.remove('show');
+}
+
+window.addEventListener('click', function(e) {
+  if (!e.target.matches('.language-btn') && !e.target.closest('.language-btn')) {
+    const dropdown = document.getElementById('languageDropdown');
+    if (dropdown && dropdown.classList.contains('show')) {
+      dropdown.classList.remove('show');
+    }
+  }
+});
+
+function switchPage(pageId) {
+const pages = document.querySelectorAll('.page-view');
+pages.forEach(page => page.classList.remove('active-page'));
+
+const targetPage = document.getElementById('page-' + pageId);
+if (targetPage) {
+targetPage.classList.add('active-page');
+}
+
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach(link => link.classList.remove('active-link'));
+
+const activeLink = document.getElementById('link-' + pageId);
+if (activeLink) {
+activeLink.classList.add('active-link');
+}
+
+window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+const photoTrack = document.getElementById("photoTrack");
+const photoTrackGaleria = document.getElementById("photoTrackGaleria");
+
+let itemsHTML = "";
+for (let i = 1; i <= 40; i++) {
+itemsHTML += `
+<div class="photo-slide-item">
+<img src="img/foto${i}.jpg" alt="Panorámica ${i}" loading="lazy">
+</div>
+`;
+}
+
+if (photoTrack) photoTrack.innerHTML = itemsHTML;
+if (photoTrackGaleria) photoTrackGaleria.innerHTML = itemsHTML;
+
+setInterval(() => {
+movePhotoSlide(1);
+}, 4000);
+
+// REPRODUCCIÓN AUTOMÁTICA SUCESIVA EN VIDEOS
+const videos = document.querySelectorAll('#videoTrack video');
+videos.forEach((video) => {
+video.addEventListener('ended', () => {
+moveVideoSlide(1);
+const currentVideos = document.querySelectorAll('#videoTrack video');
+if (currentVideos[videoIndex]) {
+currentVideos[videoIndex].play().catch(e => console.log(e));
+}
+});
+});
+
+// GENERAR PUNTOS DEL SLIDER DE RESEÑAS DINÁMICAMENTE
+initReviewDots();
+});
+
+let photoIndex = 0;
+function movePhotoSlide(direction) {
+const tracks = [document.getElementById('photoTrack'), document.getElementById('photoTrackGaleria')];
+tracks.forEach(track => {
+if (!track) return;
+const items = track.querySelectorAll('.photo-slide-item');
+const totalItems = items.length;
+if (totalItems === 0) return;
+let visibleItems = window.innerWidth <= 900 ? 1 : 2;
+const maxIndex = Math.max(0, totalItems - visibleItems);
+photoIndex += direction;
+if (photoIndex < 0) photoIndex = maxIndex;
+else if (photoIndex > maxIndex) photoIndex = 0;
+const itemWidth = items[0].getBoundingClientRect().width;
+const gap = 25;
+const amountToMove = (itemWidth + gap) * photoIndex;
+track.style.transform = `translateX(-${amountToMove}px)`;
+});
+}
+
+let videoIndex = 0;
+function updateVideoSlider() {
+const track = document.getElementById('videoTrack');
+const dots = document.querySelectorAll('#videoDots .dot');
+if (!track) return;
+const total = track.querySelectorAll('.video-slide-item').length;
+if (total === 0) return;
+if (videoIndex < 0) videoIndex = total - 1;
+if (videoIndex >= total) videoIndex = 0;
+track.style.transform = `translateX(-${videoIndex * 100}%)`;
+track.querySelectorAll('video').forEach(v => v.pause());
+dots.forEach((dot, i) => {
+dot.classList.toggle('active', i === videoIndex);
+});
+}
+function moveVideoSlide(dir) {
+videoIndex += dir;
+updateVideoSlider();
+}
+function goToVideoSlide(idx) {
+videoIndex = idx;
+updateVideoSlider();
+const activeVideo = document.querySelectorAll('#videoTrack video')[videoIndex];
+if (activeVideo) {
+activeVideo.play().catch(e => console.log(e));
+}
+}
+
+let reviewIndex = 0;
+function initReviewDots() {
+const track = document.getElementById('reviewTrack');
+const dotsContainer = document.getElementById('reviewDots');
+if (!track || !dotsContainer) return;
+const total = track.querySelectorAll('.review-card-item').length;
+dotsContainer.innerHTML = '';
+for (let i = 0; i < total; i++) {
+const dot = document.createElement('span');
+dot.className = i === 0 ? 'dot active' : 'dot';
+dot.onclick = () => goToReviewSlide(i);
+dotsContainer.appendChild(dot);
+}
+}
+
+function updateReviewSlider() {
+const track = document.getElementById('reviewTrack');
+const dots = document.querySelectorAll('#reviewDots .dot');
+if (!track) return;
+const total = track.querySelectorAll('.review-card-item').length;
+if (total === 0) return;
+if (reviewIndex < 0) reviewIndex = total - 1;
+if (reviewIndex >= total) reviewIndex = 0;
+track.style.transform = `translateX(-${reviewIndex * 100}%)`;
+dots.forEach((dot, i) => {
+dot.classList.toggle('active', i === reviewIndex);
+});
+}
+function moveReviewSlide(dir) {
+reviewIndex += dir;
+updateReviewSlider();
+}
+function goToReviewSlide(idx) {
+reviewIndex = idx;
+updateReviewSlider();
+}
+
+// TRADUCCIÓN INDIVIDUAL DE RESEÑAS
+function toggleReviewTranslation(id, textOrig, textTrans) {
+const pElem = document.getElementById(`rev-text-${id}`);
+const btnElem = pElem.nextElementSibling;
+if (pElem.innerText === textOrig) {
+pElem.innerText = textTrans;
+btnElem.innerText = textOrig.startsWith("Super") || textOrig.startsWith("Do") || textOrig.startsWith("An") || textOrig.startsWith("Breath") || textOrig.startsWith("Punctual") || textOrig.startsWith("Pure") || textOrig.startsWith("We") || textOrig.startsWith("Amazing") ? "🌐 Ver en Inglés Original" : "🌐 Ver en Español Original";
+} else {
+pElem.innerText = textOrig;
+btnElem.innerText = textOrig.startsWith("Super") || textOrig.startsWith("Do") || textOrig.startsWith("An") || textOrig.startsWith("Breath") || textOrig.startsWith("Punctual") || textOrig.startsWith("Pure") || textOrig.startsWith("We") || textOrig.startsWith("Amazing") ? "🌐 Traducir a Español" : "🌐 Translate to English";
+}
+}
+
+function submitReview(e) {
+e.preventDefault();
+const name = document.getElementById('reviewerName').value;
+const ratingNum = parseInt(document.getElementById('reviewerRating').value);
+const comment = document.getElementById('reviewerComment').value;
+const starsText = '★'.repeat(ratingNum) + '☆'.repeat(5 - ratingNum);
+const initial = name.split(' ').map(n => n[0]).join('').toUpperCase().substring(0, 2);
+const newIndex = document.querySelectorAll('#reviewTrack .review-card-item').length + 1;
+
+const newSlide = document.createElement('div');
+newSlide.className = 'review-card-item';
+newSlide.innerHTML = `
+<div class="review-box">
+<div class="review-author-flex">
+<div class="review-avatar">${initial}</div>
+<div class="review-author-info">
+<h4>${name}</h4>
+<span class="review-location">Visitante verificado</span>
+</div>
+</div>
+<div class="review-stars-date">
+<span class="review-stars">${starsText}</span>
+<span class="review-date">Hace un momento</span>
+</div>
+<p class="review-text" id="rev-text-${newIndex}">${comment}</p>
+</div>
+`;
+const track = document.getElementById('reviewTrack');
+track.appendChild(newSlide);
+initReviewDots();
+goToReviewSlide(newIndex - 1);
+document.getElementById('addReviewForm').reset();
+alert('¡Gracias por tu opinión! Tu reseña ha sido publicada.');
+}
+
+const tourData = {
+classic: {
+title: "Classic Shared Day Tour",
+price: "$110 USD",
+image: "img/tour_classic.jpg",
+description: "Para los amantes de la playa y para aquellos que solo desean disfrutar y admirar las paradisíacas islas de arena blanca con cristalinas aguas, tenemos el tour de Full playa. Visitaremos las islas más renombradas de Cayos Limones como Isla Perro Chico, Isla Pelícano y la famosa Piscina Natural.",
+itinerary: [
+"5:00 am a 5:30 am Recogida en hotel o residencia en Panamá",
+"6:00 am a 6:45 am Parada en supercentro / restaurante",
+"8:30 am a 9:00 am Llegada al puerto de San Blas",
+"9:00 am a 9:45 am Visita a Yandub (comunidad Guna habitada)",
+"9:45 am a 12:00 md Tour a las playas y piscina natural",
+"12:00 pm a 1:00 pm Almuerzo tradicional caribeño con pescado fresco",
+"1:00 pm a 3:00 pm Tiempo libre en Isla Perro Chico para snorkel",
+"3:00 pm Retorno al puerto y transporte de regreso a la ciudad"
+],
+includes: [
+"Transporte 4x4 compartido (6 pasajeros + conductor)",
+"Lancha a las islas + fotos debajo del agua y del recorrido",
+"4 paradas increíbles: 2 islas paradisíacas, Piscina natural y Comunidad indígena Guna",
+"Guía capacitado durante todo el recorrido",
+"<strong>Almuerzo Caribeño Completo + 1 bebida refrescante:</strong>",
+"<ul style='margin-left: 20px; margin-top: 5px; list-style-type: circle;'><li><strong>Opciones de plato principal:</strong> Pescado entero, Filete de pescado, Mariscos mixtos, Camarones, Pollo o Filete de pollo</li><li><strong>Acompañamientos a elegir:</strong> Arroz con coco, Patacones o Papas fritas + Ensalada fresca</li></ul>"
+],
+hasTarifas: true,
+link: "https://wa.me/50765551803?text=Hola,%20deseo%20reservar%20el%20Classic%20Shared%20Day%20Tour"
+},
+vip: {
+title: "VIP Private All-Inclusive Charter",
+price: "$150 USD",
+image: "img/tour_vip.jpg",
+description: "Disfruta de una experiencia totalmente privada y personalizada. Eliges los horarios de salida y las paradas en las islas sin la presión de grupos grandes. Servicio exclusivo VIP con atención personalizada.",
+itinerary: [
+"5:30 am Recogida privada exclusiva en tu alojamiento",
+"8:30 am Embarque privado preferencial en el puerto",
+"9:00 am a 1:00 pm Recorrido personalizado por Cayos Limones o Cayos Holandeses",
+"1:00 pm Almuerzo VIP a la carta",
+"2:00 pm a 3:30 pm Tiempo relax y snorkel en recovecos virgenes",
+"4:00 pm Retorno privado y confortable"
+],
+includes: [
+"Vehículo 4x4 exclusivo solo para tu grupo",
+"Lancha privada con capitán local experimentado",
+"Atención VIP y bebidas frías incluidas",
+"Almuerzo de alta calidad a la carta (Mariscos/Pescado/Pollo) + Snack de frutas",
+"<strong>Impuestos comarcales de entrada incluidos</strong>"
+],
+hasTarifas: false,
+link: "https://wa.me/50765551803?text=Hola,%20deseo%20reservar%20el%20VIP%20Private%20All-Inclusive%20Charter"
+}
+};
+
+function toggleChat() {
+const chatBox = document.getElementById('chatBox');
+if (chatBox) chatBox.classList.toggle('active');
+}
+
+function openModal(key) {
+const item = tourData[key];
+if (!item) return;
+document.getElementById('modalTitle').innerText = item.title;
+document.getElementById('modalPrice').innerText = item.price;
+document.getElementById('modalImg').src = item.image;
+document.getElementById('modalDescription').innerText = item.description;
+
+const itineraryList = document.getElementById('modalItinerary');
+itineraryList.innerHTML = '';
+item.itinerary.forEach(step => {
+const li = document.createElement('li');
+li.innerText = step;
+itineraryList.appendChild(li);
+});
+
+const includesList = document.getElementById('modalIncludes');
+includesList.innerHTML = '';
+item.includes.forEach(inc => {
+const li = document.createElement('li');
+li.innerHTML = inc;
+includesList.appendChild(li);
+});
+
+// Mostrar u ocultar el cuadro de tarifas según el tour
+const tarifasContainer = document.getElementById('modalTarifasContainer');
+if (item.hasTarifas) {
+tarifasContainer.style.display = 'block';
+} else {
+tarifasContainer.style.display = 'none';
+}
+
+document.getElementById('modalReserveLink').href = item.link;
+document.getElementById('infoModal').classList.add('active');
+}
+
+function closeModal() {
+document.getElementById('infoModal').classList.remove('active');
+}
+
+window.onclick = function(event) {
+const modal = document.getElementById('infoModal');
+if (event.target === modal) {
+closeModal();
+}
+};
+</script>
+</body>
+</html>
